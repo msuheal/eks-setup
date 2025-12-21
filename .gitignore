@@ -2,7 +2,7 @@
 .terraform/
 terraform.tfstate
 terraform.tfstate.*
-*.tfvars
+#*.tfvars
 .terraform.lock.hcl
 
 # AWS / Kube
