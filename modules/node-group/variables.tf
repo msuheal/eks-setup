@@ -22,7 +22,7 @@ variable "subnet_ids" {
 variable "instance_types" {
   description = "EC2 instance types for the node group"
   type        = list(string)
-  default     = ["t3.micro"]
+  default     = ["t3.medium"]
 }
 
 variable "capacity_type" {
