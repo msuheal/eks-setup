@@ -13,6 +13,12 @@ aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy.json
 ```
+Associate IAM to cluster as OIDC identity provider
+
+eksctl utils associate-iam-oidc-provider \
+  --region ap-south-1 \
+  --cluster eks-prod \
+  --approve
 
 Create IAM Role
 
